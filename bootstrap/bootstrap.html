@@ -1,154 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bootstrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Majestic Motel</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background: linear-gradient(to bottom right, rgb(34, 166, 186));
+    }
+
+    .brand-title {
+      line-height: 1.1;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .brand-title .majestic-text { color: wheat; }
+    .brand-title .motel-text { color: orangered; }
+
+    .hero {
+      background-color: #1fa6b8;
+      padding: 60px 20px;
+      text-align: center;
+      color: #000;
+    }
+
+    #carouselExample {
+      max-width: 800px;
+    }
+
+    .service-heading {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .card-text { font-weight: bold; }
+  </style>
 </head>
-<style>
-#carouselExample{
-  padding-top: 10px;
-    width: 1200px;
-    height: 400px;
-}
-
-.service-heading{
-      font-weight: bold;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font-size: 20px;
-      width: 100%;
-      text-align: left;
-      margin-bottom: 15px;
-    }
-    .service-section{
-      width: 900px;
-      height: 460px;
-      display: flex;
-      gap: 15px;
-    }
-    .card-text{
-      color: black;
-      font-weight: bold;
-}
-.brand-title {
-  color: darkblue; 
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.brand-title .motel-text {
-  color: orangered; 
-  font-size: 18px;
-}
-.brand-title .majestic-text {
-  color:wheat;
-
-}
-
-
-
-</style>
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color:rgb(144, 115, 61)">
-
-  <div class="container-fluid">
-     <a class="navbar-brand d-flex align-items-center" href="#">
-  <img src="logo.png" height="60" class="rounded-circle me-2" alt="profile">
-  <div class="brand-title">
-    <span>THE </span><br>
-    <span class="majestic-text">MAJESTIC</span><br>
-    <span class="motel-text">MOTEL</span>
-  </div>
-</a>
 
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg" style="background-color: rgb(144,115,61);">
+  <div class="container">
+
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="logo.png" height="55" class="rounded-circle me-2" alt="logo" />
+      <div class="brand-title">
+        <div>THE</div>
+        <div class="majestic-text">MAJESTIC</div>
+        <div class="motel-text">MOTEL</div>
+      </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"><span class="navbar-toggler-icon"></span> Home</a>
-        </li>
-        <a class="nav-link active" aria-current="page" href="#">About</a>
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+
         <li class="nav-item dropdown">
-          <a class="nav-link" href="#services">
-  Services
-</a>
-             <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             contacts
-             </a>
-             <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">telephone no.:-xxxxxxxxxx</a></li>
-            <li><a class="dropdown-item" href="#">E-mail:-xyz123@gmail.com</a></li>
-             <li><a class="dropdown-item" href="#">Instagram:- xyz123_official</a></li>
-              <li><a class="dropdown-item" href="#">Linkdein:- xyz-123</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">another contact options</a></li>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Contacts</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">📞 xxxxxxxxxx</a></li>
+            <li><a class="dropdown-item" href="#">✉️ xyz123@gmail.com</a></li>
+            <li><a class="dropdown-item" href="#">📷 xyz123_official</a></li>
+            <li><a class="dropdown-item" href="#">💼 xyz-123</a></li>
           </ul>
         </li>
       </ul>
-      <a class="navbar-brand" href="#"><img src="new image.jpeg" height="50" class="rounded-circle me-2" alt="profile">
-    <a href="login.html" class="btn btn-outline-primary">Login</a>
+
+      <a href="#" class="btn btn-success me-3">Book Your Stay</a>
+      <a href="login.html" class="btn btn-outline-primary">Login</a>
     </div>
   </div>
 </nav>
-<div class="d-flex justify-content-center">
-    <div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="kk image1.jpeg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="kk image2.jpeg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="kk image3.jpeg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="kk image4.jpeg" class="d-block w-100" alt="...">
-    </div>  
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-  <div id="services" class="service-heading">OUR SERVICES</div>
-  <div class="service-section">
 
-  <div class="card" style="width: 18rem;">
-  <img src="kk image5.jpeg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h2 class="card-title">Facilated Gyms</h2>
-    <p class="card-text">our hotel consists of full facilated gym also.</p>
-    <a href="#" class="btn btn-primary">Check full facility</a>
-       </div>
-       </div>
-      <div class="card" style="width: 18rem;">
-     <img src="kk image6.jpeg" class="card-img-top" alt="...">
-     <div class="card-body">
-    <h2 class="card-title"> Full security</h2>
-    <p class="card-text">our hotel is covered with full develoved cctvs .</p>
-    <a href="#" class="btn btn-primary">More security images</a>
+
+<section id="about" class="hero">
+  <h1>Welcome to The Majestic Motel</h1>
+  <p class="lead">Experience comfort, luxury, and unforgettable hospitality.</p>
+</section>
+
+
+<div class="container my-5 d-flex justify-content-center">
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active"><img src="kk image1.jpeg" class="d-block w-100" alt=""></div>
+      <div class="carousel-item"><img src="kk image2.jpeg" class="d-block w-100" alt=""></div>
+      <div class="carousel-item"><img src="kk image3.jpeg" class="d-block w-100" alt=""></div>
+      <div class="carousel-item"><img src="kk image4.jpeg" class="d-block w-100" alt=""></div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
   </div>
 </div>
-  <div class="card" style="width: 18rem;">
-  <img src="kk image7.jpeg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h2 class="card-title">pool & spa</h2>
-    <p class="card-text">our hotel also consists of a good & better pool facility.</p>
-    <a href="#" class="btn btn-primary">See more images</a>
+
+
+<section id="services" class="container my-5">
+  <div class="service-heading">OUR SERVICES</div>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="kk image5.jpeg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Fully Equipped Gym</h5>
+          <p class="card-text">Modern gym with complete facilities.</p>
+          <a href="#" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="kk image6.jpeg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">24/7 Security</h5>
+          <p class="card-text">CCTV monitored & secure environment.</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="kk image7.jpeg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Pool & Spa</h5>
+          <p class="card-text">Relax with premium pool & spa services.</p>
+          <a href="#" class="btn btn-primary">See Gallery</a>
+        </div>
+      </div>
+    </div>
   </div>
-  </div>
-  </div>
-</div>  
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </html>
